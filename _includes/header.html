@@ -3,19 +3,6 @@
     <h1>
       <span class="site-title">{{ site.username }}</span>
       <span class="site-description">{{ site.user_title }}</span>
-      <script>
-        const siteTitle = document.querySelector(".site-description");
-        const text = siteTitle.textContent + "";
-
-        let dot = 1;
-        setInterval(() => {
-          if (dot == 3) {
-            dot = 1;
-          }
-          const dotString = ".".repeat(dot);
-          siteTitle.textContent = text + dotString;
-        }, 1000);
-      </script>
     </h1>
 
     <div class="header-icons">
